@@ -1,0 +1,19 @@
+#2.\u914D\u7F6E\u76F8\u5173\u4FE1\u606F
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/mybatisplus_db?serverTimezone=UTC
+    username: root
+    password: root
+  main:
+    banner-mode: off
+#\u5F00\u542FMp\u7684\u65E5\u5FD7(\u8F93\u51FA\u5230\u63A7\u5236\u53F0)
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    banner: false
+    db-config:
+      id-type: assign_id  #\u968F\u673A\u8BBE\u7F6Eid
+      table-prefix: tbl_  #\u8BBE\u7F6E\u8868\u524D\u7F00
+
